@@ -1,6 +1,11 @@
-FROM ubuntu:latest
+FROM python:3.8.6
 
-LABEL maintainer="Tess Thyer <tess.thyer@sagebase.org>"
-LABEL base_image="ubuntu:latest"
-LABEL about.summary="Docker image for template cwl tool"
+RUN pip install \
+	pandas==1.1.3
+
+COPY bin/* /usr/local/bin/
+
+LABEL maintainer="Xindi Guo <xindi.guo@sagebase.org>"
+LABEL base_image="python:3.8.6"
+LABEL about.summary="Docker image for add_missing_ntc.py script"
 LABEL about.license="SPDX:Apache-2.0"
