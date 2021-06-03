@@ -1,0 +1,7 @@
+count_file:
+    class: File
+    path: ../data/example_counts.txt
+
+reference_file:
+    class: File
+    path: ../data/reference_ntc_list.txt
