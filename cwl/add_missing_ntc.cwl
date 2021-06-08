@@ -7,7 +7,7 @@ class: CommandLineTool
 cwlVersion: v1.0
 hints:
   DockerRequirement:
-    dockerPull: quay.io/sagebionetworks/dockstore-tool-add_missing_ntc:latest
+    dockerPull: docker.io/sagebionetworks/dockstore-tool-add_missing_ntc:latest
 inputs:
   count_file:
     inputBinding:
