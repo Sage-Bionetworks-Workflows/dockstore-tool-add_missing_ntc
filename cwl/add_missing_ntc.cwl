@@ -21,7 +21,7 @@ label: Add missing NTC rows according to NTC family and existing higest freq
 outputs:
   output_file:
     outputBinding:
-      glob: $(inputs.count_file.basename)_add_ntc.txt
+      glob: $(inputs.count_file.nameroot)_add_ntc.txt
     type: File
 s:author:
 - class: s:Person
